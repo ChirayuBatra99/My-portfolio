@@ -8,7 +8,7 @@ export default function About() {
       <div className="about__grid">
         <h2 className="about__lead reveal" data-delay="1">
           I’m a software engineer who turns ideas into{" "}
-          <em>shipped products</em> — from AI agents in production to full
+          <em>shipped products</em> from AI agents in production to full
           mobile apps with real users on the Play Store.
         </h2>
 
@@ -27,7 +27,7 @@ export default function About() {
           <ul className="about__facts">
             <li>
               <span>Education</span>
-              B.Tech CSE, VIT — 8.27 CGPA
+              B.Tech CSE, Vellore Institute of Technology
             </li>
             <li>
               <span>Based in</span>

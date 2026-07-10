@@ -46,10 +46,22 @@ export default function Projects() {
 
             <div className="project__visual" aria-hidden="true">
               <div className="project__glow" />
-              <span className="project__monogram">
-                {p.title.charAt(0)}
-              </span>
-              <span className="project__phone" />
+              {p.link ? (
+                <img
+                  className="project__screenshot"
+                  src={p.link}
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+              ) : (
+                <>
+                  <span className="project__monogram">
+                    {p.title.charAt(0)}
+                  </span>
+                  <span className="project__phone" />
+                </>
+              )}
             </div>
           </article>
         ))}

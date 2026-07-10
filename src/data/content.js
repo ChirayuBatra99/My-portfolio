@@ -3,9 +3,9 @@
 export const PROFILE = {
   name: "Chirayu Batra",
   role: "Software Engineer",
-  focus: "GenAI · Agentic AI · Full-Stack",
+  focus: "Agentic AI · Full-Stack · Mobile Apps",
   tagline:
-    "I design, build and ship production-grade AI systems and full products — end to end, idea to production.",
+    "I design, build and ship production-grade AI systems and full products end to end, idea to production.",
   location: "Bengaluru, India",
   email: "chirayubatra1104@gmail.com",
   phone: "+91 88514 35787",
@@ -67,37 +67,40 @@ export const SKILLS = [
 export const PROJECTS = [
   {
     index: "01",
+    title: "Carpool VIT",
+    subtitle: "Campus ride-sharing platform",
+    year: "Full-Stack · DevOps",
+    blurb:
+      "A full-stack carpooling platform for VIT Chennai students to create trips, discover rides, bid for seats and coordinate travel. OTP-based auth, FCM push notifications, Firebase Storage for profile media and Redux + Zustand state management - architected across a separate frontend and backend.",
+    highlights: [
+      "OTP based authentication, real time messaging, group chats, firebase notifications",
+      "Architected backend, database designs, reusable frontend components",
+      "Firebase bucket media uploads, Zustand and Redux for state management",
+      "Deployed on AWS EC2",
+      "Managed Play Store, figma, frontend, backend, deployments, releases all by myself.",
+    ],
+    stack: ["React Native", "Node.js", "MongoDB", "socket.io", "AWS EC2", "Firebase"],
+    accent: "#b06bff",
+    link: "https://play-lh.googleusercontent.com/TjKh856AwYW3G9Dufnn7qAO0UP-T2duORfYSGtLnqNuJlIGD_7DJ-xRUNcq2_dobK_GW22nafTKB8Zj9iaIdAQ=w240-h480-rw",
+  },
+  {
+    index: "02",
     title: "iSober",
     subtitle: "Quit Addictions",
     year: "Live · Google Play",
     blurb:
-      "A self-initiated consumer app that helps people quit addictions by tracking progress, building healthier habits and staying motivated. I owned the entire product lifecycle — ideation, UI/UX (Figma), frontend, backend, database, deployment, DevOps, Play Store publishing and marketing.",
+      "A self-initiated consumer app that helps people quit addictions by tracking progress, building healthier habits and staying motivated. I owned the entire product lifecycle - ideation, UI/UX (Figma), frontend, Play Store publishing and marketing.",
     highlights: [
-      "End-to-end product ownership — solo",
-      "Auth, API design & state management",
-      "Cloud deployment, analytics & release management",
+      "End-to-end product ownership -> solo",
+      "State management, Figma, development, release management",
+      "Inbuilt self help features like ToDo, Journaling, Focus, streaks, goal setting, etc",
       "Live app maintained for real users",
+      "100+ downloads on Play Store till date."
     ],
-    stack: ["React Native", "TypeScript", "Node.js", "MongoDB", "Firebase"],
+    stack: ["React Native", "TypeScript", "useContext", "Redux", "Play Store"],
     accent: "#b6ff2e",
-    link: "#",
-  },
-  {
-    index: "02",
-    title: "VIT Carpool",
-    subtitle: "Campus ride-sharing platform",
-    year: "Full-Stack · MERN",
-    blurb:
-      "A full-stack carpooling platform for VIT Chennai students to create trips, discover rides, bid for seats and coordinate travel. OTP-based auth, FCM push notifications, Firebase Storage for profile media and Redux state management — architected across a separate frontend and backend.",
-    highlights: [
-      "OTP auth: /auth/request-otp · /auth/verify-otp",
-      "Bidding engine: /bids/place-bid · /bids/get-bids-of-month",
-      "FCM multicast via firebase-admin + tokens in Mongo",
-      "Reusable UI: LocationDropDown, TravellersGrid, WindowCell",
-    ],
-    stack: ["React Native", "TypeScript", "Node.js", "Express", "MongoDB"],
-    accent: "#b06bff",
-    link: "#",
+    link: "https://play-lh.googleusercontent.com/ql6uTFwgk_Vfddl-dNWeIZcJsBNNyBJqgBmDuytJLc9Du_qg1FNdhjMF-9xRnjvhIkWzL-KIzxlp6crYEEkX1Vc=w240-h480-rw",
+
   },
 ];
 
@@ -107,8 +110,8 @@ export const EXPERIENCE = [
     role: "Associate Software Engineer — GenAI",
     period: "Sep 2025 — Present",
     points: [
-      "Designed and deployed production-grade AI agents with LangGraph — state management, memory, conditional routing, tool orchestration and RAG workflows.",
-      "Architected a table-aware context retrieval system, cutting prompt size by 87% and inference cost by 53% with no quality loss.",
+      "Designed and deployed production-grade AI agents with LangGraph - state management, memory, conditional routing, tool orchestration and RAG workflows.",
+      "Architected a table-aware context retrieval system, cutting prompt size by 87% and inference cost by 53% with no quality loss in an existing production project",
       "Built reusable AI services with LangChain, FastAPI & Python for image generation, PPT generation, Outlook integration and streaming.",
       "Engineered natural-language-to-SQL analytics agents with automated query execution, chart generation and tabular insights.",
     ],
@@ -136,9 +139,10 @@ export const EXPERIENCE = [
 export const ACHIEVEMENTS = [
   "450+ DSA problems solved on LeetCode",
   "100+ DSA problems solved on GeeksForGeeks",
-  "‘Top Coder’ Award — VIT University",
+  "‘Top Coder’ Award - VIT University",
   "Reduced enterprise LLM costs by 53%",
-  "MERN Stack Internship Program — Ethnus",
+  "MERN Stack Internship Program - Ethnus",
+  "2 apps 'Play Store' published"
 ];
 
 /* 5–6 mentors — swap the `img` placeholders when assets arrive */

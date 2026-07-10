@@ -28,7 +28,7 @@ export default function Hero() {
       </div>
 
       <div className="hero__center">
-        <p className="hero__eyebrow">Portfolio of</p>
+        <p className="hero__eyebrow">I am Mr.</p>
         <h1 className="hero__name" data-hot>
           <span className="hero__word">Chirayu</span>
           <span className="hero__word hero__word--out">Batra</span>

@@ -1,14 +1,13 @@
 const WORDS = [
   "GenAI",
-  "Agentic AI",
   "LangGraph",
   "RAG",
   "Full-Stack",
-  "React Native",
-  "FastAPI",
+  "Mobile Apps",
+  "Backend",
   "MCP Servers",
   "Product Owner",
-  "Ship it 🤘",
+  "DB architecture",
 ];
 
 export default function Marquee() {
