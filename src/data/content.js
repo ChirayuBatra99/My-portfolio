@@ -120,7 +120,7 @@ export const PROJECTS = [
 export const EXPERIENCE = [
   {
     company: "Tricon Infotech",
-    role: "Associate Software Engineer — GenAI",
+    role: "Associate Software Engineer, GenAI + Full Stack",
     period: "Sep 2025 — Present",
     points: [
       "Designed and deployed production-grade AI agents with LangGraph - state management, memory, conditional routing, tool orchestration and RAG workflows.",
