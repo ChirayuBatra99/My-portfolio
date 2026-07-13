@@ -1,5 +1,8 @@
 /* Single source of truth for all portfolio content */
 
+import carpoolImg from "../assets/carpool.png";
+import isoberImg from "../assets/isober.png";
+
 export const PROFILE = {
   name: "Chirayu Batra",
   role: "Software Engineer",
@@ -14,6 +17,11 @@ export const PROFILE = {
     linkedin: "https://www.linkedin.com/in/ChirayuBatra",
     leetcode: "https://leetcode.com/chirayubatra1104",
   },
+};
+
+export const PLAY_STORE = {
+  developer:
+    "https://play.google.com/store/apps/developer?id=Chirayu%27s+Star+Studio&hl=en_IN",
 };
 
 export const STATS = [
@@ -73,15 +81,17 @@ export const PROJECTS = [
     blurb:
       "A full-stack carpooling platform for VIT Chennai students to create trips, discover rides, bid for seats and coordinate travel. OTP-based auth, FCM push notifications, Firebase Storage for profile media and Redux + Zustand state management - architected across a separate frontend and backend.",
     highlights: [
-      "OTP based authentication, real time messaging, group chats, firebase notifications",
+      "OTP based authentication, real time messaging through sockets, group chats",
+      "Firebase notifications and Firebase storage bucket",
       "Architected backend, database designs, reusable frontend components",
       "Firebase bucket media uploads, Zustand and Redux for state management",
       "Deployed on AWS EC2",
       "Managed Play Store, figma, frontend, backend, deployments, releases all by myself.",
     ],
-    stack: ["React Native", "Node.js", "MongoDB", "socket.io", "AWS EC2", "Firebase"],
+    stack: ["React Native", "Node.js", "MongoDB", "socket.io", "AWS EC2", "Firebase", "Redux", "Zustand"],
     accent: "#b06bff",
-    link: "https://play-lh.googleusercontent.com/TjKh856AwYW3G9Dufnn7qAO0UP-T2duORfYSGtLnqNuJlIGD_7DJ-xRUNcq2_dobK_GW22nafTKB8Zj9iaIdAQ=w240-h480-rw",
+    image: carpoolImg,
+    link: "https://play.google.com/store/apps/details?id=com.carpoolchirayu&hl=en_IN",
   },
   {
     index: "02",
@@ -99,8 +109,8 @@ export const PROJECTS = [
     ],
     stack: ["React Native", "TypeScript", "useContext", "Redux", "Play Store"],
     accent: "#b6ff2e",
-    link: "https://play-lh.googleusercontent.com/ql6uTFwgk_Vfddl-dNWeIZcJsBNNyBJqgBmDuytJLc9Du_qg1FNdhjMF-9xRnjvhIkWzL-KIzxlp6crYEEkX1Vc=w240-h480-rw",
-
+    image: isoberImg,
+    link: "https://play.google.com/store/apps/details?id=com.smokingnfroundcircleapp&hl=en_IN",
   },
 ];
 
@@ -140,7 +150,7 @@ export const ACHIEVEMENTS = [
   "450+ DSA problems solved on LeetCode",
   "100+ DSA problems solved on GeeksForGeeks",
   "‘Top Coder’ Award - VIT University",
-  "Reduced enterprise LLM costs by 53%",
+  "Reduced existing enterprise LLM agent inference costs by 53% by a self-designed POC",
   "MERN Stack Internship Program - Ethnus",
   "2 apps 'Play Store' published"
 ];

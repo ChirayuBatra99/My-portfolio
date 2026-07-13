@@ -1,4 +1,4 @@
-import { PROJECTS } from "../data/content";
+import { PLAY_STORE, PROJECTS } from "../data/content";
 
 export default function Projects() {
   return (
@@ -8,6 +8,15 @@ export default function Projects() {
         <h2 className="section__title reveal" data-delay="1">
           Products I <em>shipped</em>
         </h2>
+        <a
+          className="work__storeLink reveal"
+          data-delay="2"
+          href={PLAY_STORE.developer}
+          target="_blank"
+          rel="noreferrer"
+        >
+          See all apps on Play Store ↗
+        </a>
       </div>
 
       <div className="work__list">
@@ -36,6 +45,16 @@ export default function Projects() {
               </ul>
 
               <div className="project__foot">
+                {p.link ? (
+                  <a
+                    className="project__link"
+                    href={p.link}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    View on Google Play ↗
+                  </a>
+                ) : null}
                 <div className="project__stack">
                   {p.stack.map((s) => (
                     <span key={s}>{s}</span>
@@ -44,16 +63,34 @@ export default function Projects() {
               </div>
             </div>
 
-            <div className="project__visual" aria-hidden="true">
-              <div className="project__glow" />
-              {p.link ? (
-                <img
-                  className="project__screenshot"
-                  src={p.link}
-                  alt=""
-                  loading="lazy"
-                  decoding="async"
-                />
+            <div className="project__visual">
+              <div className="project__glow" aria-hidden="true" />
+              {p.image ? (
+                p.link ? (
+                  <a
+                    className="project__screenshotLink"
+                    href={p.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label={`View ${p.title} on Google Play`}
+                  >
+                    <img
+                      className="project__screenshot"
+                      src={p.image}
+                      alt={`${p.title} app screenshot`}
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </a>
+                ) : (
+                  <img
+                    className="project__screenshot"
+                    src={p.image}
+                    alt={`${p.title} app screenshot`}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                )
               ) : (
                 <>
                   <span className="project__monogram">
