@@ -1,6 +1,9 @@
 import { useEffect, useRef } from "react";
 import { PROFILE } from "../data/content";
 
+const RESUME_URL =
+  "https://drive.google.com/file/d/12nvju437jO125ZrVcwGwiNui2kW2KW6u/view?usp=sharing";
+
 export default function Hero() {
   const glowRef = useRef(null);
 
@@ -36,6 +39,14 @@ export default function Hero() {
         <p className="hero__sub">
           {PROFILE.tagline}
         </p>
+        <a
+          className="hero__resume-btn"
+          href={RESUME_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View Resume →
+        </a>
       </div>
 
       <div className="hero__bottom">

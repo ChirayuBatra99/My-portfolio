@@ -10,6 +10,9 @@ const LINKS = [
   { label: "Contact", href: "#contact" },
 ];
 
+const RESUME_URL =
+  "https://drive.google.com/file/d/12nvju437jO125ZrVcwGwiNui2kW2KW6u/view?usp=sharing";
+
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
@@ -36,10 +39,19 @@ export default function Nav() {
       </nav>
 
       <a
-        className="nav__cta"
-        href={`mailto:${PROFILE.email}`}
+        className="nav__resume"
+        href={RESUME_URL}
+        target="_blank"
+        rel="noopener noreferrer"
       >
-        Let’s talk
+        Resume
+      </a>
+
+      <a
+        className="nav__cta"
+        href={`mailto:${"chirayubatra1104@gmail.com"}`}
+      >
+        Let's talk
       </a>
 
       <button
