@@ -25,7 +25,8 @@ export const PLAY_STORE = {
 };
 
 export const STATS = [
-  { value: "53%", label: "LLM cost reduction" },
+  // { value: "53%", label: "LLM cost reduction" },
+  { value: "20+", label: "AI agents shipped." },
   { value: "550+", label: "DSA problems solved" },
   { value: "2", label: "Apps shipped to Play Store" },
   { value: "8.27", label: "CGPA / 10" },
@@ -77,7 +78,7 @@ export const PROJECTS = [
     index: "01",
     title: "Carpool VIT",
     subtitle: "Campus ride-sharing platform",
-    year: "Full-Stack · DevOps",
+    year: "Live · Google Play",
     blurb:
       "A full-stack carpooling platform for VIT Chennai students to create trips, discover rides, bid for seats and coordinate travel. OTP-based auth, FCM push notifications, Firebase Storage for profile media and Redux + Zustand state management - architected across a separate frontend and backend.",
     highlights: [
@@ -85,11 +86,13 @@ export const PROJECTS = [
       "Firebase notifications and Firebase storage bucket",
       "Architected backend, database designs, reusable frontend components",
       "Firebase bucket media uploads, Zustand and Redux for state management",
+      "React Native frontend, Node.js backend",
+      "Inbuilt light/dark modes, inbuilt notification controls",
       "Deployed on AWS EC2",
       "Managed Play Store, figma, frontend, backend, deployments, releases all by myself.",
     ],
     stack: ["React Native", "Node.js", "MongoDB", "socket.io", "AWS EC2", "Firebase", "Redux", "Zustand"],
-    accent: "#b06bff",
+    accent: "#ffffff",
     image: carpoolImg,
     link: "https://play.google.com/store/apps/details?id=com.carpoolchirayu&hl=en_IN",
   },
@@ -121,7 +124,7 @@ export const EXPERIENCE = [
     period: "Sep 2025 — Present",
     points: [
       "Designed and deployed production-grade AI agents with LangGraph - state management, memory, conditional routing, tool orchestration and RAG workflows.",
-      "Architected a table-aware context retrieval system, cutting prompt size by 87% and inference cost by 53% with no quality loss in an existing production project",
+      "In a self designed POC, architected a table-aware context retrieval system, cutting system prompt size by 87% and LLM inference cost by 53% with no quality loss in an existing production project",
       "Built reusable AI services with LangChain, FastAPI & Python for image generation, PPT generation, Outlook integration and streaming.",
       "Engineered natural-language-to-SQL analytics agents with automated query execution, chart generation and tabular insights.",
     ],

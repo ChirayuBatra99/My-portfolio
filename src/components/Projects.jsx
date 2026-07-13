@@ -33,7 +33,18 @@ export default function Projects() {
                 <h3 className="project__title" data-hot>
                   {p.title}
                 </h3>
-                <span className="project__year">{p.year}</span>
+                {p.link ? (
+                  <a
+                    className="project__year project__year--link"
+                    href={p.link}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {p.year}
+                  </a>
+                ) : (
+                  <span className="project__year">{p.year}</span>
+                )}
               </div>
               <p className="project__subtitle">{p.subtitle}</p>
               <p className="project__blurb">{p.blurb}</p>

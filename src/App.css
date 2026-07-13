@@ -177,11 +177,11 @@
    ------------------------------------------------------------ */
 .hero {
   position: relative;
-  min-height: 100svh;
+  min-height: calc(100svh - 100px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 120px var(--gutter) 40px;
+  padding: 100px var(--gutter) 22px;
   overflow: hidden;
 }
 .hero__glow {
@@ -238,7 +238,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 22px;
+  gap: 14px;
   margin: auto 0;
 }
 .hero__eyebrow {
@@ -255,7 +255,7 @@
   font-weight: 500;
   line-height: 0.82;
   letter-spacing: -0.02em;
-  font-size: clamp(66px, 19vw, 320px);
+  font-size: clamp(58px, 13vw, 250px);
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
@@ -356,7 +356,7 @@
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   overflow: hidden;
-  padding: 22px 0;
+  padding: 16px 0;
   background: var(--bg-2);
 }
 .marquee__track {
@@ -370,7 +370,7 @@
 .marquee__item {
   font-family: var(--display);
   font-style: italic;
-  font-size: clamp(24px, 4vw, 46px);
+  font-size: clamp(20px, 3vw, 40px);
   color: var(--ink);
   display: inline-flex;
   align-items: center;
@@ -592,6 +592,14 @@
   text-transform: uppercase;
   color: var(--muted);
 }
+.project__year--link {
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.project__year--link:hover {
+  color: var(--accent, #b6ff2e);
+}
 .project__subtitle {
   font-family: var(--display);
   font-style: italic;
@@ -719,10 +727,9 @@
 .project__screenshot {
   position: relative;
   z-index: 2;
-  width: 52%;
+  width: 100%;
   height: auto;
-  aspect-ratio: 9 / 16;
-  object-fit: cover;
+  /* object-fit: contain; */
   border-radius: 18px;
   border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
   box-shadow:
