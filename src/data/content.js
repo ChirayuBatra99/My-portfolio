@@ -15,7 +15,7 @@ export const PROFILE = {
   phone: "+91 88514 35787",
   links: {
     github: "https://github.com/ChirayuBatra99",
-    linkedin: "https://www.linkedin.com/in/ChirayuBatra",
+    linkedin: "https://www.linkedin.com/in/chirayu-batra-541807217/",
     leetcode: "https://leetcode.com/chirayubatra1104",
   },
 };
