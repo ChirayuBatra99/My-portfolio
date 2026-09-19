@@ -49,11 +49,50 @@ export default function Projects() {
               <p className="project__subtitle">{p.subtitle}</p>
               <p className="project__blurb">{p.blurb}</p>
 
-              <ul className="project__highlights">
-                {p.highlights.map((h) => (
-                  <li key={h}>{h}</li>
-                ))}
-              </ul>
+              <div className="project__mid">
+                <ul className="project__highlights">
+                  {p.highlights.map((h) => (
+                    <li key={h}>{h}</li>
+                  ))}
+                </ul>
+
+                <div className="project__visual">
+                  {p.image ? (
+                    p.link ? (
+                      <a
+                        className="project__screenshotLink"
+                        href={p.link}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label={`View ${p.title} on Google Play`}
+                      >
+                        <img
+                          className="project__screenshot"
+                          src={p.image}
+                          alt={`${p.title} app screenshot`}
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </a>
+                    ) : (
+                      <img
+                        className="project__screenshot"
+                        src={p.image}
+                        alt={`${p.title} app screenshot`}
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    )
+                  ) : (
+                    <>
+                      <span className="project__monogram">
+                        {p.title.charAt(0)}
+                      </span>
+                      <span className="project__phone" />
+                    </>
+                  )}
+                </div>
+              </div>
 
               <div className="project__foot">
                 {p.link ? (
@@ -72,44 +111,6 @@ export default function Projects() {
                   ))}
                 </div>
               </div>
-            </div>
-
-            <div className="project__visual">
-              <div className="project__glow" aria-hidden="true" />
-              {p.image ? (
-                p.link ? (
-                  <a
-                    className="project__screenshotLink"
-                    href={p.link}
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label={`View ${p.title} on Google Play`}
-                  >
-                    <img
-                      className="project__screenshot"
-                      src={p.image}
-                      alt={`${p.title} app screenshot`}
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </a>
-                ) : (
-                  <img
-                    className="project__screenshot"
-                    src={p.image}
-                    alt={`${p.title} app screenshot`}
-                    loading="lazy"
-                    decoding="async"
-                  />
-                )
-              ) : (
-                <>
-                  <span className="project__monogram">
-                    {p.title.charAt(0)}
-                  </span>
-                  <span className="project__phone" />
-                </>
-              )}
             </div>
           </article>
         ))}
