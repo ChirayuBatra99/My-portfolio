@@ -2,6 +2,7 @@
 
 import carpoolImg from "../assets/carpool.png";
 import isoberImg from "../assets/isober.png";
+import batraBrainCafeImg from "../assets/bbc.png";
 
 export const PROFILE = {
   name: "Chirayu Batra",
@@ -76,6 +77,28 @@ export const SKILLS = [
 export const PROJECTS = [
   {
     index: "01",
+    title: "Batra Brain Cafe",
+    subtitle: "Coaching centre management platform",
+    year: "Live · Google Play",
+    blurb:
+      "An end-to-end management platform built for a coaching centre to digitize daily operations. It supports admins, staff and students/parents with attendance, test marks, parent communication and AI-powered assistance - reducing manual paperwork and streamlining the institute's day-to-day operations.",
+    highlights: [
+      "Role-based access for admins, staff and students/parents",
+      "Attendance and student test-mark management",
+      "Automated WhatsApp communication for parents",
+      "AI-powered chatbot for coaching centre operations",
+      "Digitized daily workflows, reducing manual paperwork",
+      "Built and deployed for a real family-run coaching business",
+      "React Native frontend with Node.js backend",
+      "End-to-end ownership: product, UI/UX, development, deployment and Play Store release",
+    ],
+    stack: ["React Native", "Node.js", "PostgreSQL", "Grok", "WhatsApp", "AWS"],
+    accent: "#ffffff",
+    image: batraBrainCafeImg,
+    link: "https://play.google.com/store/apps/details?id=com.batrabraincafe",
+  },
+  {
+    index: "02",
     title: "Carpool VIT",
     subtitle: "Campus ride-sharing platform",
     year: "Live · Google Play",
@@ -97,7 +120,7 @@ export const PROJECTS = [
     link: "https://play.google.com/store/apps/details?id=com.carpoolchirayu&hl=en_IN",
   },
   {
-    index: "02",
+    index: "03",
     title: "iSober",
     subtitle: "Quit Addictions",
     year: "Live · Google Play",
